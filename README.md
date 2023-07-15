@@ -9,7 +9,7 @@ To use this project, you need to have Python installed. Clone the repository to 
 pip install -r requirements.txt
 ```
 And also needs a postgres database:
-```markdown
+
 ## Creating a PostgreSQL Database
 
 Before running the application, you need to create a PostgreSQL database. Follow the instructions below to create the database:
@@ -40,8 +40,32 @@ Before running the application, you need to create a PostgreSQL database. Follow
 
 If you already have an existing PostgreSQL database that you want to use, skip steps 3 and 4 and simply update the connection settings in the application.
 
+## Add Tool Locations to the PATH Environment Variable
 
+This is necessary for correct execution of pg_dump and pg_restore commands.
+
+1. On the Start menu, right-click Computer.
+
+2. On the context menu, click Properties.
+
+3. In the System dialog box, click Advanced system settings.
+
+4. On the Advanced tab of the System Properties dialog box, click Environment Variables.
+
+5. In the System Variables box of the Environment Variables dialog box, scroll to Path and select it.
+
+6. Click the lower of the two Edit buttons in the dialog box.
+
+7. In the Edit System Variable dialog box, scroll to the end of the string in the Variable value box and add a semicolon (;).
+
+8. Add the new path after the semicolon.
 ```
+C:\Program Files\PostgreSQL\15\bin
+```   
+
+9. Click OK in three successive dialog boxes, and then close the System dialog box.
+
+font: [https://learn.microsoft.com](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)#to-add-a-path-to-the-path-environment-variable)
 
 ## Usage
 
